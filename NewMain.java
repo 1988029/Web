@@ -116,13 +116,85 @@ public class NewMain {
     
     
         Alimentacion leche = new Alimentacion();
+        Alimentacion galletas = new Alimentacion();
+        Ropa camiseta = new Ropa();
+        Viaje viaje = new Viaje();
         
-       vendible carrito[] = new vendible[3];
-       carrito [1] = leche;
-       leche.setNombre("desnatada");
-        if (carrito[1].getClass()==leche.getClass()){System.out.println(carrito[1].getNombre);}
+          
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      /*
+       vendible array[] = new vendible[4];
+       array [0] = leche;
+       array [1] = galletas;
+       array [2] = camiseta;
+       array [3] = viaje;
+       
+       
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] instanceof Alimentacion){
+            Alimentacion a1=(Alimentacion) array[i];
+                System.out.println(a1.nombre);
+                System.out.println(a1.precio);
+            }
+            if (array[i] instanceof Ropa){
+            Ropa r1 = (Ropa) array[i];
+                System.out.println(r1.nombre);
+                System.out.println(r1.precio);
+                }
+            if (array[i] instanceof Viaje){
+            Viaje v1 = (Viaje) array[i];
+                System.out.println(v1.origen);
+                System.out.println(v1.destino);
+                System.out.println(v1.ndias);
+                System.out.println(v1.precio);
+            }
+        }
+        */
         
         
         
