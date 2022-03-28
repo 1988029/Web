@@ -5,16 +5,16 @@ public float precioIva();
 }
 
 
-abstract class producto implements vendible{
+abstract class Producto implements vendible{
     String nombre;
   float precio;
 }
 
 
-class alimentacion extends producto{
+class Alimentacion extends Producto{
 static float iva = 4;
 
-alimentacion(){
+Alimentacion(){
 this.nombre = "Leche";
 this.precio = 10;
 }
@@ -22,7 +22,7 @@ void setNombre(String nombre){
 this.nombre = nombre;
 }
 
-void setPrecifloat (float precio){
+void setPrecio (float precio){
 this.precio = precio;
 }
 
@@ -39,19 +39,18 @@ return this.precio + this.iva * this.precio / 100;
 
 
 
-
-class ropa extends producto{
+class Ropa extends Producto{
 static float iva = 10;
 
-ropa(){
+Ropa(){
 this.nombre = "Camiseta";
 this.precio = 30;
 }
+
 void setNombre(String nombre){
 this.nombre = nombre;
 }
-
-void setPrecifloat (float precio){
+void setPrecio (float precio){
 this.precio = precio;
 }
 
@@ -68,7 +67,36 @@ return this.precio + this.iva * this.precio / 100;
 
 
 
+class Viaje implements vendible{
+int iva=21;
+int precio=100;
+int ndias=7;
+String origen = "Murcia";
+String destino = "Hong Kong";
+        
+void setPrecio(int precio){
+this.precio = precio;
+}
+void setNdias(int ndias){
+this.ndias = ndias;
+}
+void setDestino(String destino){
+this.destino = destino;
+}
+int getPrecio(){
+return this.precio;
+}
+int getNdias(){
+return this.ndias;
+}
+String getDestino(){
+return this.destino;
+}
 
+public float precioIva(){
+return this.precio + this.iva * this.precio / 100;
+}
+}
 
 
 
@@ -79,27 +107,14 @@ public class NewMain {
 
   
     public static void main(String[] args) {
-     
-        alimentacion leche = new alimentacion();
-        System.out.println(leche.precioIva());
+    
+    
+        Alimentacion leche = new Alimentacion();
         
-        
-        
-        
-        
-        
-        
-        
-        
-        while(){
-        
-        
-        
-        }
-        
-        
-        
-        
+       vendible carrito[] = new vendible[3];
+       carrito [1] = leche;
+       leche.setNombre("desnatada");
+        if (carrito[1].getClass()==leche.getClass()){System.out.println(carrito[1].getNombre);}
         
         
         
